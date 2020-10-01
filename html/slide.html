@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<style>
+.container {
+  margin: 50px auto;
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  border: 10px solid;
+  border-top-color: #856036;
+  border-left-color: #5d4426;
+  border-bottom-color: #856036;
+  border-right-color: #5d4426;
+  position: relative;
+  
+}
+.photo {
+  position: absolute;
+  animation: round 16s infinite;
+  opacity: 0;
+}
+@keyframes round {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+-webkit-@keyframes round {
+  25% {
+    opacity: 1;
+    -webkit-opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    -webkit-opacity: 0;
+  }
+}
+img:nth-child(1) {
+  animation-delay: 12s;
+}
+img:nth-child(2) {
+  animation-delay: 8s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 0s;
+}
+img:{
+    width:900px;
+    height: 900px;
+}
+
+</style>
+<body>
+<div class="container">
+  <img class='photo'  src="fam.jpg" alt="Image 1" />
+  <img class='photo'  src="my.jpg" alt="Image 2" height:900px />
+  <img class='photo'  src="soumya.jpg" alt="Image 3" />
+  <img class='photo'  src="home.jpg" alt="Image 4" />
+</div>
+</body>
+</html>
+

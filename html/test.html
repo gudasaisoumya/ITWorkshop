@@ -6,18 +6,22 @@
         <style>
             .top {
               float: top;
-             height:60px;
+             height:40px;
               border: 3px solid #f6f7f4;
               border:3px 
               
+              
             }
-            .left1 {
-             float: left;
-             width:300px;
-            height: 570px;
-             padding:10px;
-             border: 3px solid #f8f8f7;
-             }
+            .left {
+  position: absolute;
+  left: 0px;
+  width: 300px;
+  border: 3px ;
+  padding: 20px;
+  padding-top: 50px;
+  text-align: center;
+}
+            
              .right {
                  margin-top: 20px;
                  float:center;
@@ -37,24 +41,121 @@
                  {
                      color:darkgreen;
                  }
-             
+                 a{
+                     font-size: medium;
+                     
+                 }
+                 .navbar {
+  width: 100%;
+  background-color: rgb(175, 174, 174);
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: rgb(236, 26, 26);
+  text-decoration: none;
+  font-size: 17px;
+  width: 150px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #FBeec1;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+.container {
+  margin: 50px auto;
+  width: 900px;
+  height: 500px;
+  overflow: hidden;
+  border: 5px solid;
+  border-top-color: #856036;
+  border-left-color: #5d4426;
+  border-bottom-color: #856036;
+  border-right-color: #5d4426;
+  position: relative;
+  
+}
+.photo {
+  position: absolute;
+  animation: round 16s infinite;
+  opacity: 0;
+}
+@keyframes round {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+-webkit-@keyframes round {
+  25% {
+    opacity: 1;
+    -webkit-opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    -webkit-opacity: 0;
+  }
+}
+img:nth-child(1) {
+  animation-delay: 12s;
+}
+img:nth-child(2) {
+  animation-delay: 8s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 0s;
+}
             </style>
     </head>
     <title>Myself</title>
     <body style="background-color:black;">
         <div class="top">
         <h1 style="color:blanchedalmond; text-align: center;">MY PORTFOLIO!!</h1> </div>
-        <div class="top"><marquee width="100%" direction="left" height="100px"> 
-            <p Style="color:darkcyan; font-size:large;"> <b>I am Saisoumya.
-            I am from Guntur. I have completed my B.Tech from Narasaraopeta Engineering College.
-       </b> &#128516;</p> 
-        </marquee> </div>
-        <div class="left1">
-        <img src="soumya.jpg"  width="300px" height="550px" > </div> 
-    <div class="right">
-        <a href="div.html" target="_blank">EDUCATION DETAILS</a> <br>
-        <a href="contact.html" target="_blank">CONTACT</a>
-    </div>
+        <div class="navbar">
+            <a class="active" href="#"> <b>HOME </b></a>
+            <a href="div.html"> <b>EDUCATION</b> </a> 
+            <a href="personal.html"><b>PERSONAL</b></a> 
+            <a href="inter.html"><b> INTERESTS</b> </a>
+            <a href="social.html"><b>SOCIAL MEDIA</b></a>
+          </div>
+        <div class="top"><marquee width="100%" direction="left" height="50px"> 
+            <h1 Style="color:rgb(45, 240, 240); font-size:x-large;"> <b>HI !! &#128516 Welcome to my website.
+       </b> &#128525;</h1> 
+    </marquee> </div>
+       <div class="left">
+            <h1 Style="color:rgb(244, 252, 252)" >My Name is </h1> <br>
+            <h1 Style="color:rgb(244, 252, 252)" >Saisoumya </h1> <br>
+            <h1 Style="color:rgb(244, 252, 252)">I am from Guntur</h1> <br>
+            <h1 Style="color:rgb(244, 252, 252)">I love travelling</h1> <br>
+
+       </div>
+        
+        <div class="container">
+            <img class='photo'  src="frnds.jpg" alt="Image 1" />
+            <img class='photo'  src="my2.jpg" alt="Image 2"  />
+            <img class='photo'  src="my.jpg" alt="Image 3" />
+            <img class='photo'  src="fam.jpg" alt="Image 4" />
+          </div>
+
+          
 
     </body>
 

@@ -22,26 +22,74 @@ a:hover {
 .nav-right {
   float: right;
 }
+.column {
+  float: left;
+  width: 22.22%;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
     </style>
     <body style="background-color: black;">
         <div class="nav-right">
         <a href="test.html" class="previous">&laquo; Home</a>
     </div> 
        
-        <h1>* I love Dancing</h1>
-        <img src="baratanatyam.jpg">
-        <h1>* Music lover while travelling</h1>
-        <img src="music.jpg">
+        <h1>** I love Dancing **</h1>
+        <div class="row">
+          <div class="column">
+            <img src="barat.jpg"  style="width:100%">
+          </div>
+          <div class="column">
+            <img src="wes.png"  style="width:100%">
+          </div>
+          <div class="column">
+            <img src="dance.jpeg"  style="width:100%">
+          </div>
+        </div>
+        
+        <h1>** GOOD AT ART AND CRAFTS ** </h1>
+        <div class="row">
+          <div class="column">
+            <img src="art.png"  style="width:100%">
+          </div>
+          <div class="column">
+            <img src="art1.png"  style="width:100%">
+          </div>
+          <div class="column">
+            <img src="draw.png"  style="width:100%">
+          </div>
+        </div>
         <h1>** My Love for Travel never Ends **</h1>
         <h1>Travelled Places</h1>
-        <ul>
-            <li><h1>Kerala</h1></li>
-            <img src="kerala.jpg">
-            <img src="Munnar.jpg">
-            <li><h1>Karnataka</h1></li>
-            <img src="mysore.jpg">
-            <img src="Coorg.jpg">
-            <img src="falls.jpg">
-        </ul>
-    </body>
+        <h1>Kerala</h1>
+        <div class="row">
+          <div class="column">
+            <img src="keb.jpg"  style="width:100%" height="100%">
+          </div>
+          <div class="column">
+            <img src="Mun.jpg"  style="width:100%" height="100%">
+          </div>
+          <div class="column">
+            <img src="fal.png"  style="width:100%">
+          </div>
+          </div>
+
+          <h1>Karnataka</h1>
+          <div class="row">
+          <div class="column">
+            <img src="mysore.jpg"  style="width:100%">
+          </div>
+          <div class="row">
+            <div class="column">
+              <img src="mys.png"  style="width:100%">
+            </div>
+
+          <div class="column">
+            <img src="tala.jpg"  style="width:100%">
+          </div>
+          </div> </body>
 </html>
